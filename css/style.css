@@ -20,15 +20,17 @@ html{
 
 header{
     background-color: var(--orage);
-    height: 100%px;
+    height: 60px;
     padding: 1rem;
     position: fixed;
     width: 100%;
+    filter: drop-shadow(1px 1px 5px rgb(179, 179, 179));
+    z-index: 2;
 }
 
 .flex-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     max-width: 1080px;
     margin: auto;
@@ -50,3 +52,90 @@ a{
     margin: 0.25rem;
 }
 
+/* end header */
+
+.container{
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: calc(100% / 3 - 1rem);
+    margin-top: 80px;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-img-top{
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+}
+
+.product-img{
+    width: 100%;
+}
+
+.product-img:hover{
+    opacity: 0;
+}
+
+.product-img-top:hover{
+    opacity: 100%;
+    display: inline;
+}
+
+
+.hearth-btn{
+    background-color: var(--white);
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    position: absolute;
+    top: 2%;
+    right: 0%;
+}
+
+.hearth-btn:hover .fa-heart{
+    cursor: pointer;
+    color: var(--red);
+}
+
+.badge{
+    position: absolute;
+    bottom: 100px;
+    font-size: 0.75rem;
+    
+}
+
+.discount-badge{
+    background-color: var(--red);
+    padding: 0.25rem;
+    color: var(--white);
+}
+
+.label{
+    background-color: var(--green);
+    padding: 0.25rem;
+    color: var(--white);
+}
+
+.description{
+    font-size: 0.75rem;
+}
+
+.product-name{
+    font-weight: bold;
+}
+
+.price{
+    color: var(--red);
+    font-weight: 600;
+}
+
+.discount-text{
+    text-decoration: line-through;
+}
