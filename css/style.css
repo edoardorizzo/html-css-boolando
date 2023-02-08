@@ -106,13 +106,13 @@ header{
 .hearth-btn:hover .fa-heart{
     cursor: pointer;
     color: var(--red);
+    background-image: url(../img/heart-solid.svg);
 }
 
 .badge{
     position: absolute;
     bottom: 100px;
     font-size: 0.75rem;
-    
 }
 
 .discount-badge{
