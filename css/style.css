@@ -36,10 +36,14 @@ header{
     margin: auto;
 }
 
-a{
+.nav{
+    display: flex;
+}
+
+.nav a{
     text-decoration: none;
     color: var(--white);
-    margin: 0.25rem;
+    margin: 0.5rem;
     font-size: 0.75rem;
 }
 
@@ -59,12 +63,14 @@ a{
     margin: auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
+
+/* card  */
 
 .card{
     width: calc(100% / 3 - 1rem);
     margin-top: 80px;
-    margin-bottom: 1rem;
     position: relative;
     overflow: hidden;
 }
@@ -86,8 +92,6 @@ a{
 .card:hover .product-img-top{
     display: inline;
 }
-
-
 
 .hearth-btn{
     background-color: var(--white);
@@ -138,4 +142,43 @@ a{
 
 .discount-text{
     text-decoration: line-through;
+}
+
+/* end card  */
+
+/* footer  */
+
+footer{
+    margin-top: 40px;
+    padding: 0.5rem;
+    height: 80px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.footer-container{
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.footer-menu a{
+    text-decoration: none;
+    color: var(--white);
+    margin-right: 1rem;
+}
+
+.fa{
+    margin-right: 0.5rem;
 }
